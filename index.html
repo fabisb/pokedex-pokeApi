@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/bootstrap.min.css">
+</head>
+<body onload="loadApi()">
+    <nav class="navbar bg-light">
+        <a href="./index.html">
+            <div class="poke container-fluid navbar-brand">
+                <img src="./Examples/pokemon-symbol-logo-png-31.png" alt="" width="50" class="d-inline-block align-text-top">
+                POKEDEX
+            </div>
+        </a>
+    </nav>
+<div class="container">
+        <div  class="container text-center">
+            <div id="pokemons" class="row">
+
+            </div>      
+        </div>
+    <div class="container">
+        <div  class="container text-center">
+            <div id="pokeload" class="row">
+            </div>
+            <div id="pokebtn">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./Script/getApi.js"></script>
+<script src="./Script/bootstrap.min.js"></script>
+<script src="./Script/axios.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./Style/style2.css">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body onload="getPokeId()">
+
+    <nav class="navbar bg-light">
+        <a href="./index.html">
+            <div class="poke container-fluid navbar-brand">
+                <img src="./Examples/pokemon-symbol-logo-png-31.png" alt="" width="50" class="d-inline-block align-text-top">
+                POKEDEX
+            </div>
+        </a>
+    </nav>
+
+    <div class="container pokecard">
+        <div class="card" style="width: 18rem;">
+            <img id="pokeimg" src="./Examples/maxresdefault.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 id="name" class="card-title">name</h5>
+            </div>
+            <ul class="stats list-group list-group-flush">
+                <li id="id" class="stats list-group-item">ID #</li>
+                <li id="type" class="stats list-group-item">type</li>
+                <li id="peso" class="stats list-group-item">peso</li>
+                <li id="altura" class="stats list-group-item">altura</li>
+                <div id="stats">
+                    <li id="hp" class="stats list-group-item">HP: 2</li>
+                </div>
+
+                <button class="mvbtn btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">MOVIMIENTOS</button>
+
+                <div class="popup muv offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="muv offcanvas-header">
+                    <h5 class="offcanvas-title " id="offcanvasBottomLabel">movimientos:</h5>
+                </div>
+                <div id="power" class="offcanvas-body small">
+                    ...
+                </div>
+                </div>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+<script src="./Script/poke.js"></script>
+<script src="./Script/bootstrap.min.js"></script> 
+<script src="./Script/axios.min.js"></script>
+</body>
+</html>

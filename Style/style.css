@@ -1,0 +1,44 @@
+.imgs {
+    margin: 5px !important;
+    box-shadow: inset 0px 0px 3px 0px black;
+    border-radius: 13px;
+}
+
+.info {
+    margin: 1px;
+}
+
+.poke {
+    justify-content: flex-start !important;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#pokebtn {
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: center;
+}
+#imgpoke{
+    width: 96px;
+    height: 96px;
+    margin-top: 7px;
+}
+
+body {
+    background-image: url("https://www.ungeek.ph/wp-content/uploads/2020/04/25.jpg");
+}
+
+#divss{
+    background-color: white;
+}
+
+#pokemons{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
